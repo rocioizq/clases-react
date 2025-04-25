@@ -1,5 +1,9 @@
-# CLASE Nº 1 DE REACT - r/argentina-programa
+**CLASES DE REACT - r/argentina-programa**
 
-- Realización de las tareas de la clase 1 de react, ejercicios donde se vió la creación de componententes reutilizables y el Hook useState.
+Conceptos fundamentales de los ejercicios:
+- Creación de componentes reutilizables.
+- Uso del Hook useState.
 
-Se uso React + Vite.
+**Tecnologías utilizadas**
+- React
+- Vite
