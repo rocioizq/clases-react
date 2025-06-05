@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700&family=Montserrat:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f0f8ff 0%, #ffffff 100%);
+}
+
+.container-cartas {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 600px; 
+  background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%); 
+  height: 650px;
+  gap: 30px;
+  border-radius: 2em;
+}
+
+h1 {
+  text-transform: uppercase;
+  background: linear-gradient(120deg, #5a3e85 0%, #2c3e50 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: .2em;
+  font-weight: bolder;
+  font-size: 2.3em;
+}
+
+.tablero {
+  width:80%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.carta {
+  background-color: #ffff;
+  box-shadow: 0 4px 8px rgba(103, 137, 214, 0.5);
+  color: #2c3e50;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  font-size: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  transition: transform .60s;
+  border-radius: .2em;
+}
+
+.carta.flip {
+  transform: rotateY(180deg);
+}
+
+.carta:hover {
+  cursor: pointer;
+}
+
+.front-card, .back-card {
+  position: absolute;
+  border-radius: .2em;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back-card {
+  background-color: #ffff;
+  transform: rotateY(180deg);
+}
+
+.front-card {
+  background: linear-gradient(145deg, #b1befa, #6789d6);
+}
+
+.fin-del-juego {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  text-align: center;
+  color: #2c3e50;
+  margin: 0 2em;
+  padding: 1em;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 1em;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.btn-reinicio {
+  border: none;
+  padding: 0.5em 1em;
+  width: auto;
+  font-size: 1em;
+  color: #fff;
+  background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%); 
+  margin-top: 1em;
+  border-radius: 0.5em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-reinicio:hover {
+  background-color: #5c93b3;
+  transform: scale(1.05);
+}
+
+.btn-reinicio:active {
+  background-color: #487a92;
+}
