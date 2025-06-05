@@ -1,12 +1,15 @@
-# React + Vite
+## Memotest con React 🎴
+Juego de memoria para encontrar pares de cartas usando React y Vite. Proyecto realizado para el curso de r/argentina-programa para la tarea de la clase 2 de react. 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🔗 **[Demo en Vivo]()**  
 
-Currently, two official plugins are available:
+## 🛠 Tecnologías usadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React
+- Vite 
+- CSS
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Capturas de pantalla 
+![Memotest](public/imagenes/memotest.png)  
+![Memotest en juego](public/imagenes/memotest-jugando.png)  
+![Memotest terminado](public/imagenes/memotest-terminado.png)  
